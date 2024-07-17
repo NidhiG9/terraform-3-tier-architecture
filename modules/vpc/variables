@@ -1,0 +1,53 @@
+variable "cidr_block" {
+    type = string
+  
+}
+
+variable "pub_subnet" {
+    
+    type = map(object({
+      cidr_block = string
+      availability_zone = string 
+    }))
+  
+}
+
+variable "priv_subnet" {
+    type = map(object({
+      cidr_block = string
+      availability_zone = string 
+    }))
+  
+}
+
+
+variable "nat-gateway" {
+  type = map(object({
+  allocation_id  =  string
+  subnet_id = string
+  }))
+  
+}
+
+
+variable "eip" {
+  type = map(object({
+  }))
+  
+}
+
+variable "priv_subnet_rt" {
+  type = map(object({
+    gateway_id = string
+  }))
+  
+}
+
+variable "private-rt-association" {
+  type = map(object({
+    route_table_id = string 
+    subnet_id = string
+  })) 
+  
+  
+}
