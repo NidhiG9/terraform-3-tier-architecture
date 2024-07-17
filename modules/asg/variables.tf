@@ -1,127 +1,112 @@
-variable "public_elb_name" {
+
+variable "instance_type" {
+
+}
+
+variable "elb" {
+
+}
+variable "image" {
+
+}
+
+variable "elb_internal_name" {
   
 }
 
-variable "public_elb_sg" {
-    type = list(string)
+variable "image_internal" {
   
 }
 
-variable "public_elb_subnet" {
+variable "instance_type_internal" {
   
 }
 
-variable "elb_tg_name" {
+      
+
+
+variable "asg_subnets" {
+
   
 }
 
-variable "elb_public_port" {
+variable "public_elb-tg_arn" {
   
 }
 
-variable "elb_public_protocol" {
+variable "elb_internal_tg_arn" {
   
 }
 
-variable "elb_public_vpc_id" {
+variable "web_asg_name" {
+  
+}
+
+variable "max_size" {
+  
+}
+
+variable "min_size" {
   
 }
 
 
-variable "elb_tg_listener_port" {
+variable "healthcheck" {
   
 }
 
-variable "elb_tg_listener" {
+
+variable "asg_subnet_internals" {
+}
+
+variable "health_check_type" {
   
 }
 
-variable "private_elb_name" {
+variable "desired_capacity" {
+    type = number
   
 }
 
-variable "private_elb_sg" {
+
+variable "internal_max_size" {
+  
+}
+
+variable "internal_min_size" {
+  
+}
+
+variable "internal_desired_capacity" {
+  
+}
+
+variable "internal_health_check_grace_period" {
+  
+}
+
+variable "internal_health_check_type" {
+  
+}
+
+variable "elb_internal-tg-arn" {
     type = any
   
 }
 
-variable "private_elb_subnet" {
-    type = any
+
+variable "launch_template_sg" {
   
 }
 
-variable "private_tg_name" {
+variable "internal_launch_sg" {
   
 }
 
-variable "private_tg_port" {
+variable "key_name" {
   
 }
 
-variable "private_tg_protocol" {
-  
-}
-
-variable "private_tg_vpc_id" {
-  
-}
-
-
-variable "private_tg_listener_port" {
-  
-}
-
-variable "private_tg_listener_protocol" {
-  
-}
-
-
-
-
-variable "internal" {
-  
-}
-
-variable "elb_type" {
-  
-}
-
-variable "interal_elb" {
-  
-}
-
-variable "elb_type_internal" {
-  
-}
-
-variable "enabled" {
-  
-}
-
-variable "healthy_threshold" {
-  
-}
-
-variable "interval" {
-  
-}
-
-variable "matcher" {
-  
-}
-
-variable "port" {
-  
-}
-
-variable "protocol" {
-  
-}
-
-variable "timeout" {
-  
-}
-
-variable "unhealthy_threshold" {
+variable "private_key_pair" {
   
 }
